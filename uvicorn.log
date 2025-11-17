@@ -1,0 +1,138 @@
+INFO:     Will watch for changes in these directories: ['/Users/konglingran030521/Blog/server']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [87432] using WatchFiles
+INFO:     Started server process [87435]
+INFO:     Waiting for application startup.
+2025-11-17 16:01:54,625 INFO sqlalchemy.engine.Engine SELECT DATABASE()
+2025-11-17 16:01:54,626 INFO sqlalchemy.engine.Engine [raw sql] {}
+2025-11-17 16:01:54,626 INFO sqlalchemy.engine.Engine SELECT @@sql_mode
+2025-11-17 16:01:54,626 INFO sqlalchemy.engine.Engine [raw sql] {}
+2025-11-17 16:01:54,626 INFO sqlalchemy.engine.Engine SELECT @@lower_case_table_names
+2025-11-17 16:01:54,626 INFO sqlalchemy.engine.Engine [raw sql] {}
+2025-11-17 16:01:54,626 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-11-17 16:01:54,626 INFO sqlalchemy.engine.Engine SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = %(table_schema)s AND table_name = %(table_name)s
+2025-11-17 16:01:54,626 INFO sqlalchemy.engine.Engine [generated in 0.00005s] {'table_schema': 'blog_db', 'table_name': 'post'}
+2025-11-17 16:01:54,628 INFO sqlalchemy.engine.Engine COMMIT
+INFO:     Application startup complete.
+2025-11-17 16:01:56,372 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-11-17 16:01:56,373 INFO sqlalchemy.engine.Engine SELECT post.content, post.id, post.title, post.description, post.tags, post.created_at 
+FROM post ORDER BY post.created_at DESC
+2025-11-17 16:01:56,373 INFO sqlalchemy.engine.Engine [generated in 0.00007s] {}
+2025-11-17 16:01:56,374 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:     127.0.0.1:49985 - "GET /api/posts HTTP/1.1" 200 OK
+2025-11-17 16:04:58,368 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-11-17 16:04:58,369 INFO sqlalchemy.engine.Engine SELECT post.content, post.id, post.title, post.description, post.tags, post.created_at 
+FROM post ORDER BY post.created_at DESC
+2025-11-17 16:04:58,369 INFO sqlalchemy.engine.Engine [cached since 182s ago] {}
+2025-11-17 16:04:58,372 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:     127.0.0.1:50376 - "GET /api/posts HTTP/1.1" 200 OK
+2025-11-17 16:04:58,375 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-11-17 16:04:58,375 INFO sqlalchemy.engine.Engine SELECT post.content, post.id, post.title, post.description, post.tags, post.created_at 
+FROM post ORDER BY post.created_at DESC
+2025-11-17 16:04:58,375 INFO sqlalchemy.engine.Engine [cached since 182s ago] {}
+2025-11-17 16:04:58,376 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:     127.0.0.1:50376 - "GET /api/posts HTTP/1.1" 200 OK
+2025-11-17 16:05:02,264 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-11-17 16:05:02,264 INFO sqlalchemy.engine.Engine SELECT post.content, post.id, post.title, post.description, post.tags, post.created_at 
+FROM post ORDER BY post.created_at DESC
+2025-11-17 16:05:02,264 INFO sqlalchemy.engine.Engine [cached since 185.9s ago] {}
+2025-11-17 16:05:02,265 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:     127.0.0.1:50376 - "GET /api/posts HTTP/1.1" 200 OK
+2025-11-17 16:05:02,268 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-11-17 16:05:02,268 INFO sqlalchemy.engine.Engine SELECT post.content, post.id, post.title, post.description, post.tags, post.created_at 
+FROM post ORDER BY post.created_at DESC
+2025-11-17 16:05:02,268 INFO sqlalchemy.engine.Engine [cached since 185.9s ago] {}
+2025-11-17 16:05:02,269 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:     127.0.0.1:50378 - "GET /api/posts HTTP/1.1" 200 OK
+2025-11-17 16:05:02,822 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-11-17 16:05:02,824 INFO sqlalchemy.engine.Engine SELECT post.content AS post_content, post.id AS post_id, post.title AS post_title, post.description AS post_description, post.tags AS post_tags, post.created_at AS post_created_at 
+FROM post 
+WHERE post.id = %(pk_1)s
+2025-11-17 16:05:02,824 INFO sqlalchemy.engine.Engine [generated in 0.00015s] {'pk_1': 10}
+2025-11-17 16:05:02,825 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:     127.0.0.1:50378 - "GET /api/posts/10 HTTP/1.1" 200 OK
+2025-11-17 16:05:03,864 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-11-17 16:05:03,865 INFO sqlalchemy.engine.Engine SELECT post.content, post.id, post.title, post.description, post.tags, post.created_at 
+FROM post ORDER BY post.created_at DESC
+2025-11-17 16:05:03,865 INFO sqlalchemy.engine.Engine [cached since 187.5s ago] {}
+2025-11-17 16:05:03,866 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:     127.0.0.1:50378 - "GET /api/posts HTTP/1.1" 200 OK
+2025-11-17 16:05:03,868 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-11-17 16:05:03,868 INFO sqlalchemy.engine.Engine SELECT post.content, post.id, post.title, post.description, post.tags, post.created_at 
+FROM post ORDER BY post.created_at DESC
+2025-11-17 16:05:03,868 INFO sqlalchemy.engine.Engine [cached since 187.5s ago] {}
+2025-11-17 16:05:03,869 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:     127.0.0.1:50376 - "GET /api/posts HTTP/1.1" 200 OK
+2025-11-17 16:05:05,990 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-11-17 16:05:05,991 INFO sqlalchemy.engine.Engine SELECT post.content AS post_content, post.id AS post_id, post.title AS post_title, post.description AS post_description, post.tags AS post_tags, post.created_at AS post_created_at 
+FROM post 
+WHERE post.id = %(pk_1)s
+2025-11-17 16:05:05,991 INFO sqlalchemy.engine.Engine [cached since 3.167s ago] {'pk_1': 5}
+2025-11-17 16:05:05,992 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:     127.0.0.1:50376 - "GET /api/posts/5 HTTP/1.1" 200 OK
+2025-11-17 16:05:10,473 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-11-17 16:05:10,473 INFO sqlalchemy.engine.Engine SELECT post.content, post.id, post.title, post.description, post.tags, post.created_at 
+FROM post ORDER BY post.created_at DESC
+2025-11-17 16:05:10,474 INFO sqlalchemy.engine.Engine [cached since 194.1s ago] {}
+2025-11-17 16:05:10,474 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:     127.0.0.1:50376 - "GET /api/posts HTTP/1.1" 200 OK
+2025-11-17 16:05:10,477 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-11-17 16:05:10,477 INFO sqlalchemy.engine.Engine SELECT post.content, post.id, post.title, post.description, post.tags, post.created_at 
+FROM post ORDER BY post.created_at DESC
+2025-11-17 16:05:10,478 INFO sqlalchemy.engine.Engine [cached since 194.1s ago] {}
+2025-11-17 16:05:10,479 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:     127.0.0.1:50376 - "GET /api/posts HTTP/1.1" 200 OK
+2025-11-17 16:05:12,781 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-11-17 16:05:12,782 INFO sqlalchemy.engine.Engine SELECT post.content, post.id, post.title, post.description, post.tags, post.created_at 
+FROM post ORDER BY post.created_at DESC
+2025-11-17 16:05:12,782 INFO sqlalchemy.engine.Engine [cached since 196.4s ago] {}
+2025-11-17 16:05:12,783 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:     127.0.0.1:50376 - "GET /api/posts HTTP/1.1" 200 OK
+2025-11-17 16:05:12,787 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-11-17 16:05:12,787 INFO sqlalchemy.engine.Engine SELECT post.content, post.id, post.title, post.description, post.tags, post.created_at 
+FROM post ORDER BY post.created_at DESC
+2025-11-17 16:05:12,787 INFO sqlalchemy.engine.Engine [cached since 196.4s ago] {}
+2025-11-17 16:05:12,788 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:     127.0.0.1:50407 - "GET /api/posts HTTP/1.1" 200 OK
+2025-11-17 16:05:15,051 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-11-17 16:05:15,051 INFO sqlalchemy.engine.Engine SELECT post.content, post.id, post.title, post.description, post.tags, post.created_at 
+FROM post ORDER BY post.created_at DESC
+2025-11-17 16:05:15,051 INFO sqlalchemy.engine.Engine [cached since 198.7s ago] {}
+2025-11-17 16:05:15,052 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:     127.0.0.1:50407 - "GET /api/posts HTTP/1.1" 200 OK
+2025-11-17 16:05:15,054 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-11-17 16:05:15,055 INFO sqlalchemy.engine.Engine SELECT post.content, post.id, post.title, post.description, post.tags, post.created_at 
+FROM post ORDER BY post.created_at DESC
+2025-11-17 16:05:15,055 INFO sqlalchemy.engine.Engine [cached since 198.7s ago] {}
+2025-11-17 16:05:15,056 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:     127.0.0.1:50376 - "GET /api/posts HTTP/1.1" 200 OK
+2025-11-17 16:05:19,205 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-11-17 16:05:19,205 INFO sqlalchemy.engine.Engine SELECT post.content, post.id, post.title, post.description, post.tags, post.created_at 
+FROM post ORDER BY post.created_at DESC
+2025-11-17 16:05:19,205 INFO sqlalchemy.engine.Engine [cached since 202.8s ago] {}
+2025-11-17 16:05:19,207 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:     127.0.0.1:50376 - "GET /api/posts HTTP/1.1" 200 OK
+2025-11-17 16:05:37,004 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-11-17 16:05:37,004 INFO sqlalchemy.engine.Engine SELECT post.content, post.id, post.title, post.description, post.tags, post.created_at 
+FROM post ORDER BY post.created_at DESC
+2025-11-17 16:05:37,004 INFO sqlalchemy.engine.Engine [cached since 220.6s ago] {}
+2025-11-17 16:05:37,005 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:     127.0.0.1:50486 - "GET /api/posts HTTP/1.1" 200 OK
+2025-11-17 16:05:37,008 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-11-17 16:05:37,008 INFO sqlalchemy.engine.Engine SELECT post.content, post.id, post.title, post.description, post.tags, post.created_at 
+FROM post ORDER BY post.created_at DESC
+2025-11-17 16:05:37,008 INFO sqlalchemy.engine.Engine [cached since 220.6s ago] {}
+2025-11-17 16:05:37,009 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:     127.0.0.1:50486 - "GET /api/posts HTTP/1.1" 200 OK
+2025-11-17 16:05:55,986 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-11-17 16:05:55,988 INFO sqlalchemy.engine.Engine SELECT post.content, post.id, post.title, post.description, post.tags, post.created_at 
+FROM post ORDER BY post.created_at DESC
+2025-11-17 16:05:55,988 INFO sqlalchemy.engine.Engine [cached since 239.6s ago] {}
+2025-11-17 16:05:55,991 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:     127.0.0.1:50488 - "GET /api/posts HTTP/1.1" 200 OK
+2025-11-17 16:05:55,994 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-11-17 16:05:55,995 INFO sqlalchemy.engine.Engine SELECT post.content, post.id, post.title, post.description, post.tags, post.created_at 
+FROM post ORDER BY post.created_at DESC
+2025-11-17 16:05:55,995 INFO sqlalchemy.engine.Engine [cached since 239.6s ago] {}
+2025-11-17 16:05:55,996 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:     127.0.0.1:50545 - "GET /api/posts HTTP/1.1" 200 OK
